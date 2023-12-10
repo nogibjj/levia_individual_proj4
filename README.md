@@ -12,16 +12,6 @@ Lead Instructor: Derek Wales
 - Docker
 - Flask
 
-## App
-- Azure Setup
-![Azure Setup](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/azure.png)
-
-- Dockerhub
-![Dockerhub](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/dockerhub.png)
-- App
-![APP1](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/page1.png)
-![APP2](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/page2.png)
-
 ## Installation & Running the Application
 
 ### Step 1: Clone the Repository
@@ -55,6 +45,16 @@ To get your Flask application running inside a Docker container, follow these st
 ### Step 4: Deploy to Azure
 - Push the Docker container to DockerHub or Azure Container Registry.
 - Deploy the container to Azure App Service.
+
+## App
+- Azure Setup
+![Azure Setup](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/azure.png)
+
+- Dockerhub
+![Dockerhub](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/dockerhub.png)
+- App
+![APP1](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/page1.png)
+![APP2](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/page2.png)
 
 ## Criteria
 - A README.md file (15 points): This should clearly explain what the project does, its dependencies, how to run the program, and conclude with actionable and data-driven recommendations to a hypothetical management team.
