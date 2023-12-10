@@ -1,30 +1,72 @@
-# Python_Template
+# Auto Scaling Flask App Using Any Platform As a Service
 
-Welcome to my project! This repository contains all the code and resources related to my awesome project.
+## Overview
+This project is an implementation of a scalable, auto-scaling web application using Flask, deployed on Azure App Services. It demonstrates the application of Flask knowledge to build a web-hosted app that scales automatically based on user demand.
+Video:
 
-## Table of Contents
+## Instructor
+Lead Instructor: Derek Wales
 
-- MakeFile
-- .devcontainer
-- requirements.txt
-- cicd.yml
+## Requirements
+- [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/)
+- Docker
+- Flask
 
-## MakeFile
+## App
+- Azure Setup
+[Azure Setup](https://github.com/nogibjj/levia_individual_proj4/tree/main/images/azure.png)
+- Dockerhub
+[Dockerhub](https://github.com/nogibjj/levia_individual_proj4/tree/main/images/dockerhub.png)
+- App
+[APP1](https://github.com/nogibjj/levia_individual_proj4/tree/main/images/page1.png)
+[APP2](https://github.com/nogibjj/levia_individual_proj4/tree/main/images/page2.png)
 
-The `MakeFile` in this repository is a configuration file used with the `make` command. It defines a set of rules and instructions for building and managing the project. It can be used to automate common tasks such as compiling code, running tests, and more. Be sure to consult the MakeFile for specific commands and targets available for this project.
+## Installation & Running the Application
 
-## .devcontainer
+### Step 1: Clone the Repository
+Clone this repository to your local machine using:
+```bash
+git clone https://github.com/nogibjj/levia_individual_proj4.git
+```
+### Step 2: Set up Azure App Service
+- Follow Azure's documentation to set up an App Service.
+ (Reference: https://learn.microsoft.com/en-us/azure/developer/python/tutorial-containerize-simple-web-app-for-app-service?tabs=web-app-flask)
+- Ensure that the service is configured for auto-scaling.
 
-The `.devcontainer` directory contains configuration files for setting up a development container environment. This is particularly useful for ensuring that your project can be developed consistently across different platforms and development environments. It may include configuration for Docker containers, development extensions, and other development environment settings. Consult the files in this directory for more details on the development environment setup.
+### Step 3: Docker Setup
+To get your Flask application running inside a Docker container, follow these steps:
 
-## requirements.txt
+1. **Install Docker**: If you haven't already installed Docker on your machine, download and install it from [Docker's official website](https://www.docker.com/get-started).
 
-The `requirements.txt` file lists all the dependencies and packages required to run this project. You can use this file with package management tools like `pip` (for Python) or other package managers to install the necessary libraries and dependencies. It's a good practice to keep this file up-to-date as your project evolves, making it easier for others to set up and run your project with the correct dependencies.
+2. **Build the Docker Image**: Navigate to the root directory of the cloned repository where the Dockerfile is located and run the following command to build the Docker image:
+    ```bash
+    docker build -t myflaskapp .
+    ```
+   This command creates a Docker image named `myflaskapp` based on the instructions in your Dockerfile.
 
-## cicd.yml
-The cicd.yml file is a configuration file for Continuous Integration/Continuous Deployment (CI/CD) pipelines. It defines the steps and actions that need to be taken when code changes are pushed to the repository. CI/CD pipelines automate the build, test, and deployment processes, ensuring code quality and reliability.
+3. **Run the Docker Container**: After successfully building the image, you can run the container locally to test the application. Use the command:
+    ```bash
+    docker run -p 5000:5000 myflaskapp
+    ```
+   This command runs the container and maps the container's port 5000 to the local machine's port 5000. You can then access the Flask application by navigating to `http://localhost:5000` in your web browser.
 
-## License
 
-MIT
+### Step 4: Deploy to Azure
+- Push the Docker container to DockerHub or Azure Container Registry.
+- Deploy the container to Azure App Service.
 
+## Criteria
+- A README.md file (15 points): This should clearly explain what the project does, its dependencies, how to run the program, and conclude with actionable and data-driven recommendations to a hypothetical management team.
+    - Clarity and completeness of README: 10 points
+    - Quality of conclusion and recommendation: 5 points
+- GitHub Repo (20 points): A complete GitHub Repo that contains all required scripts and documentation to run your application.
+- Flask App (20 points):
+    - Functionality within Docker/(Platform): 10 points
+    - Creativity/sophistication, full credit (all 20 points for this section) will be given to students who have a functioning embedded LLM within Flask, otherwise: 10 points.
+- Use of DockerHub (Or equivalent) (10 points): Hosting your functioning container on DockerHub.   
+- Azure Web App (Or equivalent) (15 points): Successfully deploying your container via Azure Web App to a public endpoint. This can be done either directly from Docker or through Azure container registry.
+- Video Demo (20 points): A YouTube link in README.md showing a clear, concise (2-5min) walkthrough and demonstration of your application.      
+    The video should be high-quality (both audio and visual), not exceed the given time limit, and be linked in the README via a private or public YouTube link.
+    Clarity of explanation: 8 points
+    Quality demonstration of the project: 7 points
+    Quality of video and audio: 5 points
