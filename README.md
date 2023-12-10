@@ -14,12 +14,13 @@ Lead Instructor: Derek Wales
 
 ## App
 - Azure Setup
-![Azure Setup](https://github.com/nogibjj/levia_individual_proj4/tree/main/images/azure.png)
+![Azure Setup](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/azure.png)
+
 - Dockerhub
-![Dockerhub](https://github.com/nogibjj/levia_individual_proj4/tree/main/images/dockerhub.png)
+![Dockerhub](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/dockerhub.png)
 - App
-![APP1](https://github.com/nogibjj/levia_individual_proj4/tree/main/images/page1.png)
-![APP2](https://github.com/nogibjj/levia_individual_proj4/tree/main/images/page2.png)
+![APP1](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/page1.png)
+![APP2](https://github.com/nogibjj/levia_individual_proj4/blob/main/images/page2.png)
 
 ## Installation & Running the Application
 
