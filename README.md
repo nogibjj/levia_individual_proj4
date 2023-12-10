@@ -1,8 +1,8 @@
-# Auto Scaling Flask App Using Any Platform As a Service
+# Auto Scaling Flask App
 
 ## Overview
 This project is an implementation of a scalable, auto-scaling web application using Flask, deployed on Azure App Services. It demonstrates the application of Flask knowledge to build a web-hosted app that scales automatically based on user demand.
-Video: [Click Here]()
+Video: [Click Here](https://drive.google.com/file/d/1_8HVdRz2ULlDu73NZJUHgxxn3xqZXkf0/view?usp=drive_link)
 
 ## Instructor
 Lead Instructor: Derek Wales
